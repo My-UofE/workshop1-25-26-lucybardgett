@@ -20,11 +20,14 @@ def check_higher_lower(current_val, next_val, user_input):
 def process_guess(letter, board, word):
     letter=letter.lower().strip()
     word=list(word)
+    valid=False
     for i in range(0,len(word)):
         if word[i]==letter:
             board[i]=letter
             print("well done!",letter,"is in the word")
-            return True
-    print("sorry",letter,"is not in the word")
-    return False
-        
+            valid=True
+    if valid ==True:
+        return valid
+    else:
+        print("sorry",letter,"is not in the word")
+        return valid        
