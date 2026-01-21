@@ -1,6 +1,6 @@
 from game_functions import pick_value
 
-def play_game_1(min_x=0, max_x=15):
+def play_game_1(min_x=0, max_x=20):
     
     print("Welcome to Game 1: 'Guess the Number'")
     print(f"Please think of a number between {min_x} and {max_x}")
