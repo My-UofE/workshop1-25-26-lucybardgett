@@ -2,10 +2,7 @@ import random
 
 # function to be used by game_1: Guess the Number
 def pick_value(poss_values):
-    if len(poss_values)%2 ==0:
-        x =(len(poss_values)+1)//2 
-    else:
-        x=len(poss_values)//2
+    x=len(poss_values)//2
     return x
 
 # function to be used in game_2: Higher or Lower
